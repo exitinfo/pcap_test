@@ -32,7 +32,7 @@ void print_ip(const u_char *ip)
 void print_port(const u_char *port)
 {
     printf("D-PORT : %d\n", (port[2] << 8) | port[3]);
-    printf("D-PORT : %d\n", (port[0] << 8) | port[1]);
+    printf("S-PORT : %d\n", (port[0] << 8) | port[1]);
 }
 
 int main(int argc, char* argv[]) {
